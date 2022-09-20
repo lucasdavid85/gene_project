@@ -30,10 +30,10 @@ Then chose the fasta file and you can accès either to the graph or choose to st
 * The script create a folder with the name of the file without extention and put the graph figure in the folder with the gefx file (used for gephi)
 
 # Result example 
-To see the result of a fasta example, you can go to the folder [/several_fasta/](https://github.com/lucasdavid85/gene_project/blob/master/several_fasta/)
+To see the result of a fasta example, you can go to the folder [/several_fasta/](/several_fasta/)
 This is an example of a graph : 
 
-![Result graph](https://github.com/lucasdavid85/gene_project/blob/master/several_fasta/Fig_fastas.png)
+![Result graph](/several_fasta/Fig_fastas.png)
 
 # Licence
 Lucas DAVID, M2Bioinformatics

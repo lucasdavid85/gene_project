@@ -10,7 +10,7 @@ import sys
 import subprocess
 import os.path
 from pathlib import Path
-
+import signal
 
 
 
@@ -122,15 +122,16 @@ class Fenetre(QWidget):
         print("Opening gephi")   
 
 
-app = QApplication.instance() 
 
-if not app: 
-    app = QApplication(sys.argv)
 
-fen = QWidget()
-fen = Fenetre()
-fen.resize(500,250)
-fen.move(300,50)
-fen.show()
-
-sys.exit(app.exec_())
+if __name__=="__main__":
+    signal.signal(signal.SIGINT, signal.SIG_DFL)
+    app = QApplication.instance() 
+    if not app: 
+        app = QApplication(sys.argv)
+    fen = QWidget()
+    fen = Fenetre()
+    fen.resize(500,250)
+    fen.move(300,50)
+    fen.show()
+    sys.exit(app.exec_())

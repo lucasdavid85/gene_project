@@ -31,6 +31,8 @@ Then chose the fasta file and you can accès either to the graph or choose to st
 
 # Result example 
 To see the result of a fasta example, you can go to the folder [/several_fasta/](/several_fasta_example/)
+
+
 This is an example of a graph : 
 
 ![Result graph](/several_fasta_example/Fig_fastas.png)

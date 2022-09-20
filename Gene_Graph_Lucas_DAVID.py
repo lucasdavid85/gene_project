@@ -1,9 +1,7 @@
-# importations à faire pour la réalisation d'une interface graphique
-import sys
-
-from PyQt5.QtWidgets import QApplication, QWidget,QPushButton,QHBoxLayout,QFileDialog
-
+#!/usr/bin/env python3
 #Library importation
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget,QPushButton,QHBoxLayout,QFileDialog
 import os.path
 import networkx as nx 
 from Bio import pairwise2
@@ -16,11 +14,14 @@ from pathlib import Path
 
 
 
+#Notice that you have to download gephi in the home path
+
+
 class Fenetre(QWidget):
 
+    #To visualize the window
     def __init__(self):
         QWidget.__init__(self)
-#
         dialog = QFileDialog()
         self.fname = dialog.getOpenFileName(None, "Import FASTA", "", "FASTA data files (*.fasta)")
         filename=self.fname[0]
@@ -58,12 +59,24 @@ class Fenetre(QWidget):
                 G.add_edge(fasta_list_keys[i],fasta_list_keys[j],weight=alignments[compt])
                 compt+=1
 
+        #normalize the weight
+        alignmax,alignmin=max(alignments),min(alignments)
+        for i, val in enumerate(alignments):
+            alignments[i]=(val-alignmin)/(alignmax-alignmin)
+
+        #Removing all the edges under the threashold, here fixed at 75%
+        compt2=0
+        for i in range(len(fasta_list_values)):
+            for j in range(i+1,len(fasta_list_values)):
+                if(alignments[compt2]<0.25):
+                    G.remove_edge(fasta_list_keys[i],fasta_list_keys[j])
+                compt2+=1
+
         #Drawing the graph
         pos=nx.circular_layout(G)
-        labels=nx.get_edge_attributes(G,'weight')
-        nx.draw(G,pos,with_labels=True,node_size=15, font_size = 10,node_color="blue",width=0.5)
-        esmall = [(u, v) for (u, v, d) in G.edges(data=True) if d["weight"] <= 0.5]
-        nx.draw_networkx_edges(G, pos, edgelist=esmall, width=10, alpha=0.5, edge_color="b")
+        weights=[wt for u,v,wt in G.edges(alignments)]
+        nx.draw_networkx(G,pos,width=weights)
+        labels=nx.get_edge_attributes(G,"weight")
         nx.draw_networkx_edge_labels(G,pos,edge_labels=labels)
         plt.axis("on")
 
@@ -76,51 +89,28 @@ class Fenetre(QWidget):
         plt.savefig(f"{tail}/{tail}.png")
         print("Saving the gefx file to {}/{}.png...".format(tail,tail))
 
-
-
-        # creation du premier bouton
+        # Button to show the graphic
         self.bouton1 = QPushButton("View the graphic")
         self.bouton1.clicked.connect(self.showing_graph)
 
-
-        # creation du deuxieme bouton
+        # Button to load Genephi with the file
         self.bouton2 = QPushButton("Load gephi with the file")
         self.bouton2.clicked.connect(self.open_genephi)
  
-        #self.bouton3 = QPushButton("Entrer un nouveau fichier fasta")
-        #self.bouton3.clicked.connect(self.upload_fasta)
-
-
-        # creation du gestionnaire de mise en forme de type QHBoxLayout
+        # To manage the shape of the window
         layout = QHBoxLayout()
         layout.addWidget(self.bouton1)
         self.setLayout(layout)
-
-
-        # ajout du premier bouton au gestionnaire de mise en forme
         layout.addWidget(self.bouton1)
-        # ajout du deuxieme bouton au gestionnaire de mise en forme
         layout.addWidget(self.bouton2)
-        #layout.addWidget(self.bouton3)
-        # on fixe le gestionnaire de mise en forme de la fenetre
-
         self.setLayout(layout)
-
-        self.setWindowTitle("Ma fenetre")
-
-
-
-    #def upload_fasta(self): 
-    #    dialog = QFileDialog()
-    #    self.fname = dialog.getOpenFileName(None, "Import FASTA", "", "FASTA data files (*.fasta)")
-
+        self.setWindowTitle("Viewing the results of the alignment")
 
     def showing_graph(self):
         plt.show()
         print("Opening the graphic")
 
-       
-
+    
     def open_genephi(self): 
         filename=self.fname[0]
         file=filename[:-6]
@@ -132,28 +122,15 @@ class Fenetre(QWidget):
         print("Opening gephi")   
 
 
-
-
-
-
-
-         
 app = QApplication.instance() 
 
-if not app: # sinon on crée une instance de QApplication
+if not app: 
     app = QApplication(sys.argv)
-
 
 fen = QWidget()
 fen = Fenetre()
-#tail=fen.upload_fasta()
-#fen.open_genephi(tail)
 fen.resize(500,250)
 fen.move(300,50)
 fen.show()
-
-
-#w = MainWindow()
-#w.show()
 
 sys.exit(app.exec_())

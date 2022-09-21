@@ -34,10 +34,12 @@ Then chose the fasta file and you can accès either to the graph or choose to st
 =======
 >>>>>>> b207d58038a03e84d2c86260d18e47f6e73f4ecb
 # Result example 
-To see the result of a fasta example, you can go to the folder [/several_fasta/](https://github.com/lucasdavid85/gene_project/blob/master/several_fasta/)
+To see the result of a fasta example, you can go to the folder [/several_fasta/](/several_fasta_example/)
+
+
 This is an example of a graph : 
 
-![Result graph](https://github.com/lucasdavid85/gene_project/blob/master/several_fasta/Fig_fastas.png)
+![Result graph](/several_fasta_example/Fig_fastas.png)
 
 <<<<<<< HEAD
 

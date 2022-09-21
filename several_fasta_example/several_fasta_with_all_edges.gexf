@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-09-21">
+    <creator>NetworkX 2.8.6</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="4DJH_1|Chains A, B|Kappa-" label="4DJH_1|Chains A, B|Kappa-" />
+      <node id="3B6A_1|Chains A, B, C, D," label="3B6A_1|Chains A, B, C, D," />
+      <node id="2D6K_1|Chains A, B|lectin" label="2D6K_1|Chains A, B|lectin" />
+      <node id="6VI4_1|Chains A, B|Kappa " label="6VI4_1|Chains A, B|Kappa " />
+      <node id="6VI4_2|Chains C, D|Nanobo" label="6VI4_2|Chains C, D|Nanobo" />
+      <node id="7CB4_1|Chains A, B|L-aspa" label="7CB4_1|Chains A, B|L-aspa" />
+      <node id="3CB3_1|Chains A, B, C, D|" label="3CB3_1|Chains A, B, C, D|" />
+      <node id="3CV5_1|Chain A|Alpha-mann" label="3CV5_1|Chain A|Alpha-mann" />
+      <node id="1A4F_1|Chain A|HEMOGLOBIN" label="1A4F_1|Chain A|HEMOGLOBIN" />
+      <node id="1A4F_2|Chain B|HEMOGLOBIN" label="1A4F_2|Chain B|HEMOGLOBIN" />
+      <node id="1GH5_1|Chain A|ANTIFUNGAL" label="1GH5_1|Chain A|ANTIFUNGAL" />
+      <node id="7BCB_1|Chains A, B|KORA d" label="7BCB_1|Chains A, B|KORA d" />
+      <node id="7BCB_2|Chain C|DNA (5'-D(" label="7BCB_2|Chain C|DNA (5'-D(" />
+      <node id="7BCB_3|Chain D|DNA (5'-D(" label="7BCB_3|Chain D|DNA (5'-D(" />
+    </nodes>
+    <edges>
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="3B6A_1|Chains A, B, C, D," id="0" weight="120.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="2D6K_1|Chains A, B|lectin" id="1" weight="88.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="6VI4_1|Chains A, B|Kappa " id="2" weight="307.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="6VI4_2|Chains C, D|Nanobo" id="3" weight="81.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="7CB4_1|Chains A, B|L-aspa" id="4" weight="148.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="3CB3_1|Chains A, B, C, D|" id="5" weight="160.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="3CV5_1|Chain A|Alpha-mann" id="6" weight="247.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="1A4F_1|Chain A|HEMOGLOBIN" id="7" weight="84.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="1A4F_2|Chain B|HEMOGLOBIN" id="8" weight="89.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="1GH5_1|Chain A|ANTIFUNGAL" id="9" weight="66.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="7BCB_1|Chains A, B|KORA d" id="10" weight="71.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="7BCB_2|Chain C|DNA (5'-D(" id="11" weight="18.0" />
+      <edge source="4DJH_1|Chains A, B|Kappa-" target="7BCB_3|Chain D|DNA (5'-D(" id="12" weight="17.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="2D6K_1|Chains A, B|lectin" id="13" weight="64.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="6VI4_1|Chains A, B|Kappa " id="14" weight="93.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="6VI4_2|Chains C, D|Nanobo" id="15" weight="64.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="7CB4_1|Chains A, B|L-aspa" id="16" weight="106.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="3CB3_1|Chains A, B, C, D|" id="17" weight="118.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="3CV5_1|Chain A|Alpha-mann" id="18" weight="170.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="1A4F_1|Chain A|HEMOGLOBIN" id="19" weight="65.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="1A4F_2|Chain B|HEMOGLOBIN" id="20" weight="69.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="1GH5_1|Chain A|ANTIFUNGAL" id="21" weight="46.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="7BCB_1|Chains A, B|KORA d" id="22" weight="58.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="7BCB_2|Chain C|DNA (5'-D(" id="23" weight="17.0" />
+      <edge source="3B6A_1|Chains A, B, C, D," target="7BCB_3|Chain D|DNA (5'-D(" id="24" weight="16.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="6VI4_1|Chains A, B|Kappa " id="25" weight="76.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="6VI4_2|Chains C, D|Nanobo" id="26" weight="50.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="7CB4_1|Chains A, B|L-aspa" id="27" weight="80.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="3CB3_1|Chains A, B, C, D|" id="28" weight="81.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="3CV5_1|Chain A|Alpha-mann" id="29" weight="123.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="1A4F_1|Chain A|HEMOGLOBIN" id="30" weight="52.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="1A4F_2|Chain B|HEMOGLOBIN" id="31" weight="55.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="1GH5_1|Chain A|ANTIFUNGAL" id="32" weight="38.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="7BCB_1|Chains A, B|KORA d" id="33" weight="44.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="7BCB_2|Chain C|DNA (5'-D(" id="34" weight="13.0" />
+      <edge source="2D6K_1|Chains A, B|lectin" target="7BCB_3|Chain D|DNA (5'-D(" id="35" weight="13.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="6VI4_2|Chains C, D|Nanobo" id="36" weight="63.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="7CB4_1|Chains A, B|L-aspa" id="37" weight="117.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="3CB3_1|Chains A, B, C, D|" id="38" weight="119.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="3CV5_1|Chain A|Alpha-mann" id="39" weight="195.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="1A4F_1|Chain A|HEMOGLOBIN" id="40" weight="70.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="1A4F_2|Chain B|HEMOGLOBIN" id="41" weight="70.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="1GH5_1|Chain A|ANTIFUNGAL" id="42" weight="51.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="7BCB_1|Chains A, B|KORA d" id="43" weight="55.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="7BCB_2|Chain C|DNA (5'-D(" id="44" weight="18.0" />
+      <edge source="6VI4_1|Chains A, B|Kappa " target="7BCB_3|Chain D|DNA (5'-D(" id="45" weight="17.0" />
+      <edge source="6VI4_2|Chains C, D|Nanobo" target="7CB4_1|Chains A, B|L-aspa" id="46" weight="75.0" />
+      <edge source="6VI4_2|Chains C, D|Nanobo" target="3CB3_1|Chains A, B, C, D|" id="47" weight="87.0" />
+      <edge source="6VI4_2|Chains C, D|Nanobo" target="3CV5_1|Chain A|Alpha-mann" id="48" weight="115.0" />
+      <edge source="6VI4_2|Chains C, D|Nanobo" target="1A4F_1|Chain A|HEMOGLOBIN" id="49" weight="44.0" />
+      <edge source="6VI4_2|Chains C, D|Nanobo" target="1A4F_2|Chain B|HEMOGLOBIN" id="50" weight="53.0" />
+      <edge source="6VI4_2|Chains C, D|Nanobo" target="1GH5_1|Chain A|ANTIFUNGAL" id="51" weight="39.0" />
+      <edge source="6VI4_2|Chains C, D|Nanobo" target="7BCB_1|Chains A, B|KORA d" id="52" weight="45.0" />
+      <edge source="6VI4_2|Chains C, D|Nanobo" target="7BCB_2|Chain C|DNA (5'-D(" id="53" weight="14.0" />
+      <edge source="6VI4_2|Chains C, D|Nanobo" target="7BCB_3|Chain D|DNA (5'-D(" id="54" weight="14.0" />
+      <edge source="7CB4_1|Chains A, B|L-aspa" target="3CB3_1|Chains A, B, C, D|" id="55" weight="134.0" />
+      <edge source="7CB4_1|Chains A, B|L-aspa" target="3CV5_1|Chain A|Alpha-mann" id="56" weight="223.0" />
+      <edge source="7CB4_1|Chains A, B|L-aspa" target="1A4F_1|Chain A|HEMOGLOBIN" id="57" weight="87.0" />
+      <edge source="7CB4_1|Chains A, B|L-aspa" target="1A4F_2|Chain B|HEMOGLOBIN" id="58" weight="81.0" />
+      <edge source="7CB4_1|Chains A, B|L-aspa" target="1GH5_1|Chain A|ANTIFUNGAL" id="59" weight="55.0" />
+      <edge source="7CB4_1|Chains A, B|L-aspa" target="7BCB_1|Chains A, B|KORA d" id="60" weight="71.0" />
+      <edge source="7CB4_1|Chains A, B|L-aspa" target="7BCB_2|Chain C|DNA (5'-D(" id="61" weight="18.0" />
+      <edge source="7CB4_1|Chains A, B|L-aspa" target="7BCB_3|Chain D|DNA (5'-D(" id="62" weight="17.0" />
+      <edge source="3CB3_1|Chains A, B, C, D|" target="3CV5_1|Chain A|Alpha-mann" id="63" weight="227.0" />
+      <edge source="3CB3_1|Chains A, B, C, D|" target="1A4F_1|Chain A|HEMOGLOBIN" id="64" weight="83.0" />
+      <edge source="3CB3_1|Chains A, B, C, D|" target="1A4F_2|Chain B|HEMOGLOBIN" id="65" weight="86.0" />
+      <edge source="3CB3_1|Chains A, B, C, D|" target="1GH5_1|Chain A|ANTIFUNGAL" id="66" weight="54.0" />
+      <edge source="3CB3_1|Chains A, B, C, D|" target="7BCB_1|Chains A, B|KORA d" id="67" weight="72.0" />
+      <edge source="3CB3_1|Chains A, B, C, D|" target="7BCB_2|Chain C|DNA (5'-D(" id="68" weight="18.0" />
+      <edge source="3CB3_1|Chains A, B, C, D|" target="7BCB_3|Chain D|DNA (5'-D(" id="69" weight="17.0" />
+      <edge source="3CV5_1|Chain A|Alpha-mann" target="1A4F_1|Chain A|HEMOGLOBIN" id="70" weight="118.0" />
+      <edge source="3CV5_1|Chain A|Alpha-mann" target="1A4F_2|Chain B|HEMOGLOBIN" id="71" weight="117.0" />
+      <edge source="3CV5_1|Chain A|Alpha-mann" target="1GH5_1|Chain A|ANTIFUNGAL" id="72" weight="76.0" />
+      <edge source="3CV5_1|Chain A|Alpha-mann" target="7BCB_1|Chains A, B|KORA d" id="73" weight="95.0" />
+      <edge source="3CV5_1|Chain A|Alpha-mann" target="7BCB_2|Chain C|DNA (5'-D(" id="74" weight="18.0" />
+      <edge source="3CV5_1|Chain A|Alpha-mann" target="7BCB_3|Chain D|DNA (5'-D(" id="75" weight="17.0" />
+      <edge source="1A4F_1|Chain A|HEMOGLOBIN" target="1A4F_2|Chain B|HEMOGLOBIN" id="76" weight="64.0" />
+      <edge source="1A4F_1|Chain A|HEMOGLOBIN" target="1GH5_1|Chain A|ANTIFUNGAL" id="77" weight="35.0" />
+      <edge source="1A4F_1|Chain A|HEMOGLOBIN" target="7BCB_1|Chains A, B|KORA d" id="78" weight="42.0" />
+      <edge source="1A4F_1|Chain A|HEMOGLOBIN" target="7BCB_2|Chain C|DNA (5'-D(" id="79" weight="14.0" />
+      <edge source="1A4F_1|Chain A|HEMOGLOBIN" target="7BCB_3|Chain D|DNA (5'-D(" id="80" weight="14.0" />
+      <edge source="1A4F_2|Chain B|HEMOGLOBIN" target="1GH5_1|Chain A|ANTIFUNGAL" id="81" weight="38.0" />
+      <edge source="1A4F_2|Chain B|HEMOGLOBIN" target="7BCB_1|Chains A, B|KORA d" id="82" weight="43.0" />
+      <edge source="1A4F_2|Chain B|HEMOGLOBIN" target="7BCB_2|Chain C|DNA (5'-D(" id="83" weight="15.0" />
+      <edge source="1A4F_2|Chain B|HEMOGLOBIN" target="7BCB_3|Chain D|DNA (5'-D(" id="84" weight="14.0" />
+      <edge source="1GH5_1|Chain A|ANTIFUNGAL" target="7BCB_1|Chains A, B|KORA d" id="85" weight="29.0" />
+      <edge source="1GH5_1|Chain A|ANTIFUNGAL" target="7BCB_2|Chain C|DNA (5'-D(" id="86" weight="11.0" />
+      <edge source="1GH5_1|Chain A|ANTIFUNGAL" target="7BCB_3|Chain D|DNA (5'-D(" id="87" weight="12.0" />
+      <edge source="7BCB_1|Chains A, B|KORA d" target="7BCB_2|Chain C|DNA (5'-D(" id="88" weight="12.0" />
+      <edge source="7BCB_1|Chains A, B|KORA d" target="7BCB_3|Chain D|DNA (5'-D(" id="89" weight="10.0" />
+      <edge source="7BCB_2|Chain C|DNA (5'-D(" target="7BCB_3|Chain D|DNA (5'-D(" id="90" weight="14.0" />
+    </edges>
+  </graph>
+</gexf>

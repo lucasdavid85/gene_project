@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 #Library importation
 import sys
+#from turtle import filling
 from PyQt5.QtWidgets import QApplication, QWidget,QPushButton,QHBoxLayout,QFileDialog
 import os.path
 import networkx as nx 
@@ -59,6 +60,27 @@ class Fenetre(QWidget):
                 G.add_edge(fasta_list_keys[i],fasta_list_keys[j],weight=alignments[compt])
                 compt+=1
 
+
+        #Drawing the graph
+        fig_with_all_edges=plt.figure()
+        fig_with_all_edges.set_figheight(10)
+        fig_with_all_edges.set_figwidth(15)
+        pos=nx.circular_layout(G)
+        weights=[wt for u,v,wt in G.edges(alignments)]
+        nx.draw_networkx(G,pos,width=weights)
+        labels=nx.get_edge_attributes(G,"weight")
+        nx.draw_networkx_edge_labels(G,pos,edge_labels=labels)
+        plt.axis("on")
+
+        #Create folder
+        subprocess.run(["mkdir",tail])
+
+        #Saving all files
+        nx.write_gexf(G,f'{tail}/{tail}_with_all_edges.gexf')
+        print("Saving the gefx file to {}/{}_with_all_edges.gexf...".format(tail,tail))
+        plt.savefig(f"{tail}/{tail}_with_all_edges.png")
+        print("Saving the gefx file to {}/{}_with_all_edges.png...".format(tail,tail))
+
         #normalize the weight
         alignmax,alignmin=max(alignments),min(alignments)
         for i, val in enumerate(alignments):
@@ -72,22 +94,14 @@ class Fenetre(QWidget):
                     G.remove_edge(fasta_list_keys[i],fasta_list_keys[j])
                 compt2+=1
 
-        #Drawing the graph
-        pos=nx.circular_layout(G)
-        weights=[wt for u,v,wt in G.edges(alignments)]
-        nx.draw_networkx(G,pos,width=weights)
-        labels=nx.get_edge_attributes(G,"weight")
-        nx.draw_networkx_edge_labels(G,pos,edge_labels=labels)
-        plt.axis("on")
 
-        #Create folder
-        subprocess.run(["mkdir",tail])
+
 
         #Saving all files
         nx.write_gexf(G,f'{tail}/{tail}.gexf')
         print("Saving the gefx file to {}/{}.gexf...".format(tail,tail))
-        plt.savefig(f"{tail}/{tail}.png")
-        print("Saving the gefx file to {}/{}.png...".format(tail,tail))
+        #plt.savefig(f"{tail}/{tail}.png",dpi=(300))
+        #print("Saving the gefx file to {}/{}.png...".format(tail,tail))
 
         # Button to show the graphic
         self.bouton1 = QPushButton("View the graphic")
@@ -115,7 +129,7 @@ class Fenetre(QWidget):
         filename=self.fname[0]
         file=filename[:-6]
         home,tail =os.path.split(file)
-        gephi_filename="{}/{}.gexf".format(tail,tail)
+        gephi_filename="{}/{}_with_all_edges.gexf".format(tail,tail)
         home_path=Path.home()
         path_to_gephi="{}/gephi-0.9.7/bin/gephi".format(home_path)
         result=subprocess.run([path_to_gephi, "-o",gephi_filename]) 

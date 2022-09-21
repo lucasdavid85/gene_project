@@ -29,10 +29,6 @@ python3 Gene_Graph_Lucas_DAVID.py
 Then chose the fasta file and you can accès either to the graph or choose to start gephi to manage the graph
 * The script create a folder with the name of the file without extention and put the graph figure in the folder with the gefx file (used for gephi)
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b207d58038a03e84d2c86260d18e47f6e73f4ecb
 # Result example 
 To see the result of a fasta example, you can go to the folder [/several_fasta/](/several_fasta_example/)
 
@@ -41,11 +37,11 @@ This is an example of a graph :
 
 ![Result graph](/several_fasta_example/Fig_fastas.png)
 
-<<<<<<< HEAD
+
 
 # Licence
 Lucas DAVID, M2Bioinformatics
 =======
 # Licence
 Lucas DAVID, M2Bioinformatics
->>>>>>> b207d58038a03e84d2c86260d18e47f6e73f4ecb
+
